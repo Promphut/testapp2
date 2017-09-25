@@ -15,6 +15,19 @@ const Container = styled.div`
         height:auto;
         position:relative;
     }
+    .fa-facebook-official{
+        color:white;
+        font-size:56px;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+    .hover{
+        &:hover{
+            cursor:pointer;
+            text-decoration:underline;
+        }
+    }
 `
 const Row = styled.div`
     display:flex;
@@ -25,13 +38,6 @@ const Row = styled.div`
 const Cont = styled.p`
     color:white;
     font-family:'Mitr';
-`
-const IC = styled.i`
-    color:white;
-    font-size:56px;
-    &:hover{
-        cursor:pointer;
-    }
 `
 
 export default {
@@ -49,13 +55,13 @@ export default {
                 <nav class="level">
                     <div class="level-left">
                         <div class="level-item">
-                        <IC class="fa fa-facebook-official fa-2x" onClick={(e)=>this.openNewTab(e,'https://www.facebook.com')}></IC>                            
+                        <i class="fa fa-facebook-official fa-2x" onClick={(e)=>this.openNewTab(e,'https://www.facebook.com/Jodrod-337749356637094/')}></i>                            
                         </div>
                     </div>
 
                     
                     <div class="level-right">
-                        <Cont class="level-item">ต้องการผู้ช่วย ติดต่อเรา Line ID : gqh1437b</Cont>                    
+                        <Cont class="level-item">ต้องการผู้ช่วย ติดต่อเรา Line ID : <span class='hover' onClick={(e)=>this.openNewTab(e,'http://bit.ly/addjodrod')}> {" gqh1437b"}</span></Cont>                    
                     </div>
                 </nav>
             </div> 

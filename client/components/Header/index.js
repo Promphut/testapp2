@@ -58,7 +58,7 @@ export default {
 
                     
                     <div class="level-right">
-                        <p class="level-item hidden-mobile"><a class='mitr'>ช่วยเหลือ</a></p>
+                        <p class="level-item hidden-mobile"><a class='mitr' href='http://bit.ly/addjodrod'>ช่วยเหลือ</a></p>
                         <p class="level-item hidden-mobile"><a class='mitr'>เข้าใช้งาน</a></p>
                         {this.$route.path=='/'?<router-link class='button is-primary is-medium' to='/share'>แบ่งปันที่จอดรถ</router-link>:
                         <router-link class='button is-primary is-medium' to='/'>ค้นหาที่จอดรถ</router-link>}

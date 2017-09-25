@@ -20,7 +20,7 @@ methods: {
         e.preventDefault()
         // console.log(e)
         var isShare = this.$route.path == '/share'
-        var url = isShare?'https://script.google.com/macros/u/0/s/AKfycbzxj8BQPITYL7HdhKdZfL7QSCBQ4nuNCawPe7eBH-PbteOjAkc/exec'
+        var url = isShare?'https://script.google.com/macros/s/AKfycbzxj8BQPITYL7HdhKdZfL7QSCBQ4nuNCawPe7eBH-PbteOjAkc/exec'
         :"https://script.google.com/macros/s/AKfycbwmgwh0p2FrJiIq-o4-r9-t3GF8iBcom6X-ROJLEWvYQ9di-2M/exec"
         var nof = isShare?7:6
         var res = 1
@@ -57,7 +57,8 @@ methods: {
         
             // Callback handler that will be called on success
             request.done(function (response, textStatus, jqXHR){
-                alert('ลงทะเทียนเรียบร้อย')
+                alert('ลงทะเทียนเรียบร้อย');
+                $form.prop("value", '');
             });
         
             // Callback handler that will be called on failure

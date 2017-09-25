@@ -8,9 +8,10 @@ const Server = require('webpack-dev-server')
 const webpackConfig = require('./webpack.dev')
 const config = require('./config')
 const LogPlugin = require('./log-plugin')
+var cors = require('cors')
 
 const app = express()
-
+app.use(cors())
 const devServerOptions = Object.assign({}, webpackConfig.devServer, config.devServer)
 
 const host = devServerOptions.host

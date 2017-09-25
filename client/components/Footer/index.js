@@ -7,9 +7,14 @@ const Container = styled.div`
     width:100%;
     display:flex;
     height:60px;
-    justify-content:space-between;
     align-items:center;
     background-color:hsl(171, 100%, 41%);
+    @media(max-width:768px){
+        display:block;
+        padding:20px;
+        height:auto;
+        position:relative;
+    }
 `
 const Row = styled.div`
     display:flex;
@@ -40,11 +45,11 @@ export default {
   render(h) {
     return (
         <Container>
-            <div class='container'>
+            <div class='container is-mobile'>
                 <nav class="level">
                     <div class="level-left">
                         <div class="level-item">
-                        <IC class="fa fa-facebook-official fa-2x" on-click={(e)=>this.openNewTab(e,'https://www.facebook.com')}></IC>                            
+                        <IC class="fa fa-facebook-official fa-2x" onClick={(e)=>this.openNewTab(e,'https://www.facebook.com')}></IC>                            
                         </div>
                     </div>
 

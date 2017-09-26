@@ -8,10 +8,9 @@ const Server = require('webpack-dev-server')
 const webpackConfig = require('./webpack.dev')
 const config = require('./config')
 const LogPlugin = require('./log-plugin')
-var cors = require('cors')
 
 const app = express()
-app.use(cors())
+
 const devServerOptions = Object.assign({}, webpackConfig.devServer, config.devServer)
 
 const host = devServerOptions.host
@@ -42,4 +41,4 @@ const server = new Server(compiler, Object.assign({
   publicPath: compiler.options.publicPath
 }, devServerOptions))
 
-server.listen(process.env.PORT || port)
+server.listen(port, host)

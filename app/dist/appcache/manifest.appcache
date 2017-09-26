@@ -1,0 +1,18 @@
+CACHE MANIFEST
+#ver:2017-9-26 17:29:30
+#plugin:4.8.3
+
+CACHE:
+./client.00f4233d.js
+./vendor.f1bc6399.js
+./manifest.23bc3b7d.js
+./styles.212ab265.css
+./
+./favicon.ico
+./car-park.jpg
+
+NETWORK:
+*
+
+FALLBACK:
+/ /

@@ -36,7 +36,7 @@ const Img = styled.div`
   left:0;
   height:60%;
   width:100%;
-  background-image:url('/car-park.jpg');
+  background-image:url('./car-park.jpg');
   background-repeat:no-repeat;
   background-position:center;
 `

@@ -57,7 +57,7 @@ methods: {
         
             // Callback handler that will be called on success
             request.done(function (response, textStatus, jqXHR){
-                alert('ลงทะเทียนเรียบร้อย');
+                alert('ระบบได้บันทึกข้อมูลของท่านเรียบร้อยแล้ว อาจมีทีมงานติดต่อกลับเพื่อให้บริการท่าน');
                 $form.prop("value", '');
             });
         
@@ -126,9 +126,9 @@ methods: {
                     </div>  
                 </div>}    
                 <div class="field">
-                    <label class="label">คอนโดหรือพื้นที่จอดรถที่ต้องการ</label>
+                    <label class="label">{isShare?"คอนโดหรือพื้นที่จอดรถที่ต้องการแบ่งปัน":"คอนโดหรือพื้นที่จอดรถที่ต้องการ"}</label>
                     <div class="control">
-                        <textarea class="textarea" name='location' placeholder="บริเวรที่ต้องการ..." defaultValue={""} />
+                        <textarea class="textarea" name='location' placeholder={isShare?"บริเวรที่ต้องการแบ่งปัน...":"บริเวรที่ต้องการ..."} defaultValue={""} />
                     </div>
                 </div>
                 <button class="button is-primary is-medium" type="submit">ลงทะเบียนกับเรา</button>      

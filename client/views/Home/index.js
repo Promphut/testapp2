@@ -77,7 +77,7 @@ export default {
               <h3 class="title is-1">{isShare?"ช่วยแก้ปัญหารถติดและเปลี่ยนที่ว่างของคุณให้เป็นรายได้":"ช่วยคุณค้นหาที่จอดรถและเพิ่มความสะดวกให้กับคนเดินทาง"}</h3> 
             </div>
             <FormBox class='column'>
-              <router-link to='/' class="title is-3 link hidden-mobile" >{isShare?"ลงทะเบียนค้นหาที่จอดรถ":"ลงทะเบียนแบ่งปันที่จอดรถ"}</router-link> 
+              <router-link to={isShare?'/':'/share'} class="title is-3 link hidden-mobile" >{isShare?"ลงทะเบียนค้นหาที่จอดรถ":"ลงทะเบียนแบ่งปันที่จอดรถ"}</router-link> 
               <Text class='hidden-mobile'>หรือ</Text>
               <Line class='hidden-mobile'/>
               <h2 class="title is-3">{isShare?"ลงทะเบียนแบ่งปันที่จอดรถ":"ลงทะเบียนค้นหาที่จอดรถ"}</h2> 

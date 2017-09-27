@@ -23,6 +23,7 @@ const Container = styled.div`
         }
     }
     .hover{
+        margin-left:8px;
         &:hover{
             cursor:pointer;
             text-decoration:underline;
@@ -43,7 +44,7 @@ const Cont = styled.p`
 export default {
   methods: {
     openNewTab(e,url){
-        console.log(url)
+        // console.log(url)
         e.preventDefault()
         window.open(url,'_blank') 
     }
@@ -61,7 +62,7 @@ export default {
 
                     
                     <div class="level-right">
-                        <Cont class="level-item">ต้องการผู้ช่วย ติดต่อเรา Line ID : <span class='hover' onClick={(e)=>this.openNewTab(e,'http://bit.ly/addjodrod')}> {" gqh1437b"}</span></Cont>                    
+                        <Cont class="level-item">ต้องการผู้ช่วย ติดต่อเรา Line ID : <span class='hover' onClick={(e)=>this.openNewTab(e,'http://bit.ly/addjodrod')}> {" "+" @gqh1437b"}</span></Cont>                    
                     </div>
                 </nav>
             </div> 

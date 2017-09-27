@@ -63,7 +63,7 @@ export default {
                     
                     <div class="level-right">
                         <p class="level-item hidden-mobile"><a class='mitr' href='#' onClick={(e)=>this.openNewTab(e,'http://bit.ly/addjodrod')}>ช่วยเหลือ</a></p>
-                        <p class="level-item hidden-mobile"><a class='mitr' href='#' onClick={alert('เตรียมพบกับฟีเจอร์นี้เร็วๆนี้')}>เข้าใช้งาน</a></p>
+                        <p class="level-item hidden-mobile"><a class='mitr' href='#' onClick={()=>alert('เตรียมพบกับฟีเจอร์นี้เร็วๆนี้')}>เข้าใช้งาน</a></p>
                         {this.$route.path=='/'?<router-link class='button is-primary is-medium' to='/share'>แบ่งปันที่จอดรถ</router-link>:
                         <router-link class='button is-primary is-medium' to='/'>ค้นหาที่จอดรถ</router-link>}
                     </div>

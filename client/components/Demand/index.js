@@ -126,9 +126,9 @@ methods: {
                     </div>  
                 </div>}    
                 <div class="field">
-                    <label class="label">{isShare?"คอนโดหรือพื้นที่จอดรถที่ต้องการแบ่งปัน":"คอนโดหรือพื้นที่จอดรถที่ต้องการ"}</label>
+                    <label class="label">{isShare?"ชื่อคอนโดหรือพื้นที่จอดรถที่ต้องการแบ่งปัน":"ชื่อคอนโดหรือพื้นที่จอดรถที่ต้องการ"}</label>
                     <div class="control">
-                        <textarea class="textarea" name='location' placeholder={isShare?"บริเวรที่ต้องการแบ่งปัน...":"บริเวรที่ต้องการ..."} defaultValue={""} />
+                        <textarea class="textarea" name='location' placeholder={isShare?"ชื่อคอนโด / บริเวณที่ต้องการแบ่งปัน เช่น เดอะเบส อ่อนนุช 77":"ชื่อคอนโด / บริเวณที่ต้องการ เช่น เดอะเบส อ่อนนุช 77"} defaultValue={""} />
                     </div>
                 </div>
                 <button class="button is-primary is-medium" type="submit">ลงทะเบียนกับเรา</button>      
